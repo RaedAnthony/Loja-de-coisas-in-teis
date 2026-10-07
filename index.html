@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZL Ruínas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <body id="fundo" src="assets/img/fundo.jpg"></body>
+    <div id="hud">
+        <div>
+            <img src="assets/img/coracao-removebg-preview.png" alt="vida">
+            Vidas: <span id="vidas">3</span>
+        </div>
+        <div>
+            <img src="assets/img/trofeu-removebg-preview.png" alt="vitoria">
+            Vitórias: <span id="vitorias">0</span>
+        </div>
+        <div>
+            <img src="assets/img/baixados.png" alt="tempo">
+            Tempo: <span id="tempo">0</span>s
+        </div>
+    </div>
+
+    <div id="mensagem">
+        Leve o cursor até a peça, agarrando-a com um clique e leve até a sua posição correspondente!
+    </div>
+
+    <main id="jogo">
+        <div id="tabuleiro">
+            <div class="slot" data-posicao="1"></div>
+            <div class="slot" data-posicao="2"></div>
+            <div class="slot" data-posicao="3"></div>
+            <div class="slot" data-posicao="4"></div>
+            <div class="slot" data-posicao="5"></div>
+            <div class="slot" data-posicao="6"></div>
+            <div class="slot" data-posicao="7"></div>
+            <div class="slot" data-posicao="8"></div>
+            <div class="slot" data-posicao="9"></div>
+        </div>
+        <div id="inimigo">
+            <img src="assets/img/output-onlinegiftools.gif" alt="inimigo">
+        </div>
+
+    </main>
+    <div id="gameOver" class="escondido">
+        <h1>Pegue o seu banquinho e saia de mancinho!</h1>
+        <p>Você perdeu todas as suas vidas.</p>
+        <button id="reiniciar">
+            Jogar novamente
+        </button>
+    </div>
+
+    <footer>
+        <p>© 2026 UZL Ruínas - Anthony, Letícia, João V.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
